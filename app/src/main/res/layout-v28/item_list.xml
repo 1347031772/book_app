@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@+id/tv_price"
+        android:textSize="28sp"
+        tools:text="书名" />
+
+    <TextView
+        android:id="@+id/tv_price"
+        android:layout_width="180dp"
+        android:layout_height="40dp"
+        android:layout_toStartOf="@+id/btn"
+        android:textSize="28sp"
+        tools:text="价钱" />
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="0dp"
+        android:layout_marginRight="1dp"
+        android:background="@mipmap/shanchu"
+        android:onClick="sc" />
+
+</RelativeLayout>

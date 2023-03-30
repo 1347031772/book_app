@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+
+    <LinearLayout
+        android:id="@+id/ly_top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal"
+        android:background="@color/coral">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:src="@mipmap/ic_back"
+            android:onClick="back"/>
+        <TextView
+            android:id="@+id/txt_topbar"
+            android:layout_width="250dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="图书管理"
+            android:textColor="@color/white"
+            android:textSize="24sp" />
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:src="@mipmap/ic_add"
+            android:layout_weight="1"
+            android:onClick="add"/>
+
+    </LinearLayout>
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/lv_01"
+        android:layout_weight="1"
+        android:divider="#000000"
+        android:dividerHeight="1dp"
+        android:background="#ffffff"
+        android:cacheColorHint="#00000000"
+        android:choiceMode="singleChoice"
+        android:drawSelectorOnTop="true"
+        android:fastScrollEnabled="true"
+        android:scrollingCache="false"
+        android:scrollbars="none"
+        android:smoothScrollbar="true"
+        android:stackFromBottom="false"
+        android:textFilterEnabled="true"
+        android:transcriptMode="disabled"
+        android:visibility="visible"
+        android:layout_gravity="center"
+        />
+</LinearLayout>
